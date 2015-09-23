@@ -1,0 +1,14 @@
+﻿Build started 9/23/2015 12:53:25 PM.
+     1>Project "D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\ProjectEuler\ProjectEuler.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Problem4.cpp
+         Problem4.cpp
+     1>d:\users\alex\documents\visual studio 2015\projects\projecteuler\projecteuler\problem4.cpp(7): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\x64\Debug\ProjectEuler.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\x64\Debug\ProjectEuler.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\x64\Debug\ProjectEuler.lib" /MACHINE:X64 x64\Debug\Problem4.obj
+         ProjectEuler.vcxproj -> D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\x64\Debug\ProjectEuler.exe
+     1>Done Building Project "D:\Users\Alex\Documents\Visual Studio 2015\Projects\ProjectEuler\ProjectEuler\ProjectEuler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.77
