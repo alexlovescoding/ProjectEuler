@@ -18,21 +18,15 @@ int main() {
 		for (int i = 0; i < secondword.length(); i++) {
 			secondWordList.insert(secondword.at(i));
 		}
-		sort(firstWordList.begin(), firstWordList.end());
-		sort(secondWordList.begin(), secondWordList.end());
-		bool same = true;
-		for (int i = 0; i < firstWordList.size(); i++) {
-			if (firstWordList[i] != secondWordList[i]) {
-				same = false;
-				break;
-			}
-		}
-		if (same == true) {
+
+		if (firstWordList == secondWordList) {
 			cout << "Same" << endl;
 		}
 		else {
 			cout << "Different" << endl;
 		}
+		firstWordList.clear();
+		secondWordList.clear();
 		cin >> firstword;
 		cin >> secondword;
 	}
