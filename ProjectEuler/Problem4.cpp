@@ -39,5 +39,7 @@ int main()
 		}
 	}
 
-	cout << largest << "\n" << result;
+	cout << largest << "\n" << result << "\n";
+	system("PAUSE");
+	return 0;
 }
