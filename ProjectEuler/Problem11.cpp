@@ -27,33 +27,11 @@ int main() {
 		}
 	}
 
-	//Forward and up diagonal iteration
-	for (int i = 19; i > 4; i--) {
-		int product = 0;
-		for (int j = 0; j < 17; j++) {
-			product = num[i][j] * num[i - 1][j + 1] * num[i - 2][j + 2] * num[i - 3][j + 3];
-			if (largestProduct < product) {
-				largestProduct = product;
-			}
-		}
-	}
-
 	//Backward and down diagonal iteration
 	for (int i = 0; i < 17; i++) {
 		int product = 0;
 		for (int j = 19; j > 4; j--) {
 			product = num[i][j] * num[i + 1][j - 1] * num[i + 2][j - 2] * num[i + 3][j - 3];
-			if (largestProduct < product) {
-				largestProduct = product;
-			}
-		}
-	}
-
-	//Backward and up diagonal iteration
-	for (int i = 19; i > 4; i--) {
-		int product = 0;
-		for (int j = 19; j > 4; j--) {
-			product = num[i][j] * num[i - 1][j - 1] * num[i - 2][j - 2] * num[i - 3][j - 3];
 			if (largestProduct < product) {
 				largestProduct = product;
 			}
