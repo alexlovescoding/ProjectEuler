@@ -18,9 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Problem9.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C1A63264-F7FF-49C5-A5D9-2FE3954D879D}</ProjectGuid>
     <RootNamespace>ProjectEuler</RootNamespace>
