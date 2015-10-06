@@ -23,6 +23,5 @@ int main() {
 
 	cout << "Prime # " << primeCount << " is " << count << "\n";
 
-	system("PAUSE");
 	return 0;
 }
