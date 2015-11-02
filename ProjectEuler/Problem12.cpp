@@ -2,31 +2,65 @@
 #include <math.h>
 using namespace std;
 
-int main() {
-	int num = 30;
-	int sum = 0;
-	int numFactors = 2;
-	double sqrtDouble = 0.0;
-	int sqrtInt = 0;
-	while (true) {
-		numFactors = 2;
-		sum = 0.5*(num)*(num + 1);
-		sqrtDouble = sqrt(sum);
-		sqrtInt = (int)floor(sqrt(sum));
-		if (sqrtDouble == sqrtInt) {
-			numFactors ++;
+bool isPrime(int num) {
+	if (num == 1) {
+		return false;
+	}
+	else if (num < 4) {
+		return true;
+	}
+	else if (num % 2 == 0) {
+		return false;
+	}
+	else if (num < 9) {
+		return true;
+	}
+	else if (num % 3 == 0) {
+		return false;
+	}
+	else {
+		int limit = floor(sqrt(num));
+		int counter = 5;
+		while (counter <= limit) {
+			if (num % counter == 0) {
+				return false;
+			}
+			else if (num % (counter + 2) == 0) {
+				return false;
+			}
+			counter += 6;
 		}
-		for (int i = 2; i < sqrtInt; i++){
-			if (sum%i == 0) {
-				numFactors += 2;
+	}
+	return true;
+}
+
+int main() {
+	bool foundNum = false;
+	int counter = 0;
+	int primeOne = 0;
+	int primeTwo = 0;
+	int num = 0;
+	int n = 1;
+	while (!foundNum) {
+		num = (1.0 / 2)*n*(n + 1);
+		primeOne = 0;
+		primeTwo = 0;
+		for (int i = 0; i < num; i++) {
+			if (primeOne != 0 && primeTwo != 0) {
+				break;
+			}
+			else if (num%i == 0 && isPrime(i)) {
+				if (primeOne == 0) {
+					primeOne = i;
+				}
+				else if (primeTwo == 0) {
+					primeTwo = i;
+				}
 			}
 		}
-		if (numFactors > 500) {
-			break;
-		}
-		num++;
+		n++;
+		cout << primeOne << " " << primeTwo << endl;
 	}
-	cout << sum << endl;
-	system("pause");
+
 	return 0;
 }
